@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tank Game</title>
-    <style>
-        canvas {
-            background-color: #f0f0f0;
-            display: block;
-            margin: auto;
-        }
-    </style>
+    <title>Naval Battle Simulator BETA 0.01</title>
 </head>
 <body>
-    <canvas id="game" width="800" height="600"></canvas>
-    <script src="tank.js"></script>
+    <h1>Welcome to Naval Battle Simulator BETA 0.01</h1>
+    <button id = 'startGame'>Start Game</button>
+    <button id = 'manual'>Manual</button>
+    <script>
+        document.getElementById('startGame').addEventListener('click', function() {
+            window.location.href = 'start.html';  // Replace 'game.html' with the path to your game HTML file
+        });
+        document.getElementById('manual').addEventListener('click', function() {
+            window.location.href = 'manual.html';  // Replace 'game.html' with the path to your game HTML file
+        });
+    </script>
 </body>
 </html>
